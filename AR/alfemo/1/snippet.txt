@@ -1,4 +1,4 @@
-<model-viewer src="Alfemo-Butun.draco.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="photo_studio_loft_hall_1k.hdr" poster="poster.webp" shadow-intensity="4.6" shadow-softness="0.69" exposure="1.55" camera-orbit="2.763deg 87.63deg auto">
+<model-viewer src="alfemo-montaj.draco.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="photo_studio_loft_hall_1k.hdr" poster="poster.webp" shadow-intensity="1">
 
     <div class="progress-bar hide" slot="progress-bar">
         <div class="update-bar"></div>
