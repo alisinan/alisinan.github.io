@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>&lt;model-viewer&gt; template</title>
+    <title>Artırılmış Gerçeklik ile Mobilya Sunumu</title>
     <meta charset="utf-8">
-    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="description" content="Ali Sinan Ozturk">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" href="./styles.css" rel="stylesheet"/>
     <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
@@ -11,12 +11,12 @@
   </head>
   <body>
     <!-- <model-viewer> HTML element -->
-    <model-viewer bounds="tight" src="AlfemoKomodin.draco.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1" autoplay>
+    <model-viewer bounds="tight" src="AlfemoKomodin.draco.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="0.89" autoplay>
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
       </div>
       <button slot="ar-button" id="ar-button">
-          View in your space
+          Odanızda görün
       </button>
       <div id="ar-prompt">
           <img src="ar_hand_prompt.png">
