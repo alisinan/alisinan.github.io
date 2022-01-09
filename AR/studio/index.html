@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>AR Examples - Ali Sinan Ozturk</title>
+
+    <script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+
+    <style>
+        body {
+            height: 600px;
+        }
+
+        #header {
+            font-size: 4em;
+            padding: 5px;
+        }
+
+        .cell {
+            width:30%;
+            height:40%;
+            margin:8px;
+            float: left;
+            padding: 3px;
+            background-color: #BBBBBB;
+        }
+
+        @media screen and (max-width: 900px) {
+            body {
+                height: unset;
+            }
+            .cell {
+                width:unset;
+                padding: 0;
+                font-size:18px;
+            }
+
+            .babylon {
+                width:100%;
+                margin: 0;
+                padding: 8px;
+                box-sizing: border-box;
+                background: unset;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id = "header">
+        AR Studio Showroom
+    </div>
+    <div class= "cell babylon">
+    <babylon model="https://alisinan.github.io/AR/portmanto/Portmanto.glb"></babylon>
+    </div>
+    <div class= "cell babylon">
+        <babylon model="https://alisinan.github.io/AR/omax/micromax-simplified-r1.draco.glb"></babylon>
+    </div>
+    <div class= "cell babylon">
+        <babylon model="https://alisinan.github.io/AR/planor/planor.draco.glb"></babylon>
+    </div>
+    <div class= "cell babylon">
+        <babylon model="https://alisinan.github.io/AR/davinci/davinci-r2.draco.glb"></babylon>
+    </div>
+    <div class= "cell babylon">
+        <babylon model="https://alisinan.github.io/AR/alfemo/komodin/AlfemoKomodin.draco.glb"></babylon>
+    </div>
+    <div class= "cell babylon">
+        <babylon model="https://alisinan.github.io/AR/alfemo/1/alfemo-montaj.draco.glb"></babylon>
+    </div>
+
+</body>
+</html>
