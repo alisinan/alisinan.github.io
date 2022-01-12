@@ -29,12 +29,35 @@
             box.position.x = 0.5;
             box.position.y = 1;
 
-            return scene;
+            const boxMaterial = new BABYLON.StandardMaterial("material", scene);
+            boxMaterial.diffuseColor = BABYLON.Color3.Random();
+            box.material = boxMaterial;
+
+            box.actionManager = new BABYLON.ActionManager(scene);
+            box.actionManager.registerAction(
+                new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, 
+                function (evt) {
+                    const sourceBox = evt.meshUnderPointer;
+                    sourceBox.position.x += 0.1;
+                    sourceBox.position.y += 0.1;
+
+                    boxMaterial.diffuseColor = BABYLON.Color3.Random();
+                }));
+
+            const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 4, height: 4});
+
+            const xrPromise = scene.createDefaultXRExperienceAsync({
+                floorMeshes: [ground]
+            });
+
+            return xrPromise.then((xrExperience) => {
+                console.log("Done, WebXR is enabled.");
+                return scene;
+            });
         };
 
-        const sceneToRender = createScene();
-        engine.runRenderLoop(function(){
-            sceneToRender.render();
+        createScene().then(sceneToRender => {
+            engine.runRenderLoop(() => sceneToRender.render());
         });
     </script>
 </body>
