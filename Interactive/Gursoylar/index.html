@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon_SW.png">
+
+    <title>Gürsoylar - SOLIDWORKS Visualize Etkileşimli Resim Örneği</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="visualize.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+
+    <main role="main" class="container">
+
+      <div class="visualize">
+        <h1>Gürsoylar</h1>
+        <h2>SOLIDWORKS Visualize Etkileşimli Resim Örneği</h2>
+        <p class="lead">Modeli döndürmek için tıklayıp basılı tutarak farenizi/parmağınızı oynatın.<br> Hazır gelen bu çıktıyı istediğiniz web sitesine kolayca ekleyebilirsiniz.</p>
+      </div>
+      <div id="threesixty" class="container">
+        <section id="threesixty-main">
+            <div id="viewer"></div>
+        </section>
+    </div>
+
+    </main><!-- /.container -->
+  
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <!-- Visualize-->
+    <script src="js/prototype.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/browserdetect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/apple_core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/vr.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/library.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/threesixty.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+	var wheelzoomSet=false;
+        document.observe("dom:loaded", function () {
+            if (AC.Detector.isiPad()) {
+                $('main').addClassName('isipad');
+				}
+				// Added to support zooming with mousewheel
+			    document.onclick = handleMouseEvent;
+           
+        });
+		function handleMouseEvent(e) {
+		var evt = (e==null ? event:e);
+		if (evt.which) { 
+			if (evt.which==2){ // Middle button
+				if(wheelzoomSet == false){
+				wheelzoom(document.querySelector('img'));
+				wheelzoomSet = true;
+				}
+			}
+		}
+ 		}
+		
+    </script>
+    
+    <script type="text/javascript" src="js/wheelzoom.js"></script>
+  </body>
+</html>
