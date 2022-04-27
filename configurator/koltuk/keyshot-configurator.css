@@ -125,7 +125,7 @@ body {
 
 .panelarea.layoutvertical {
     top: 0;
-    right: 40px;
+    right: 0px;
     height: 100%;
     width: calc(var(--touch-ui-height) * 1%);
     flex-direction: column;
