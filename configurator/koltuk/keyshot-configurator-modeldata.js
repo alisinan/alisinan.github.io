@@ -33,7 +33,7 @@ model =
                     "name": "Alcantara 4"
                 }
             ],
-            "name": "RealCloth Satin Blue #1"
+            "name": "Kumaş"
         },
         {
             "materials": [
@@ -67,7 +67,7 @@ model =
                     "name": "Bakır"
                 }
             ],
-            "name": "Gold 24k Polished #1"
+            "name": "Metal"
         }
     ],
     "products": [
@@ -75,8 +75,8 @@ model =
             "checked": true,
             "icon": "default.png",
             "materialgroups": [
-                "RealCloth Satin Blue #1",
-                "Gold 24k Polished #1"
+                "Kumaş",
+                "Metal"
             ],
             "modelset": 1004,
             "name": "Default"

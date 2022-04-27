@@ -33,6 +33,6 @@ layoutsettings =
     "sizeThumbnailFont": 9,
     "sizeTitlesFont": 11,
     "studioIconRelativeSize": 50,
-    "studioTabName": "View",
+    "studioTabName": "Görünüş",
     "touchUIHeight": 15
 };
