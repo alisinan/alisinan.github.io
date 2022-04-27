@@ -7,28 +7,28 @@ model =
                     "checked": true,
                     "icon": "alcantara%201.png",
                     "multimaterials": [
-                        "10+59"
+                        "5+1"
                     ],
                     "name": "Alcantara 1"
                 },
                 {
                     "icon": "alcantara%202.png",
                     "multimaterials": [
-                        "10+1653"
+                        "5+2"
                     ],
                     "name": "Alcantara 2"
                 },
                 {
                     "icon": "alcantara%203.png",
                     "multimaterials": [
-                        "10+1682"
+                        "5+3"
                     ],
                     "name": "Alcantara 3"
                 },
                 {
                     "icon": "alcantara%204.png",
                     "multimaterials": [
-                        "10+1723"
+                        "5+4"
                     ],
                     "name": "Alcantara 4"
                 }
@@ -38,33 +38,33 @@ model =
         {
             "materials": [
                 {
+                    "icon": "alt%c4%b1n.png",
+                    "multimaterials": [
+                        "10+6"
+                    ],
+                    "name": "Altın"
+                },
+                {
+                    "icon": "g%c3%bcm%c3%bc%c5%9f.png",
+                    "multimaterials": [
+                        "10+7"
+                    ],
+                    "name": "Gümüş"
+                },
+                {
+                    "icon": "platinyum.png",
+                    "multimaterials": [
+                        "10+8"
+                    ],
+                    "name": "Platinyum"
+                },
+                {
                     "checked": true,
-                    "icon": "gold%2024k%20polished%20%231.png",
+                    "icon": "bak%c4%b1r.png",
                     "multimaterials": [
-                        "12+1777"
+                        "10+9"
                     ],
-                    "name": "Gold 24k Polished #1"
-                },
-                {
-                    "icon": "silver%20polished%20%231.png",
-                    "multimaterials": [
-                        "12+1810"
-                    ],
-                    "name": "Silver Polished #1"
-                },
-                {
-                    "icon": "platinum%20polished%20%231.png",
-                    "multimaterials": [
-                        "12+1813"
-                    ],
-                    "name": "Platinum Polished #1"
-                },
-                {
-                    "icon": "copper%20polished%20%231.png",
-                    "multimaterials": [
-                        "12+1817"
-                    ],
-                    "name": "Copper Polished #1"
+                    "name": "Bakır"
                 }
             ],
             "name": "Gold 24k Polished #1"
@@ -85,29 +85,19 @@ model =
     "studios": [
         {
             "checked": true,
-            "icon": "studio%201.png",
+            "icon": "perspektif.png",
             "id": 550919981,
-            "name": "Studio 1"
+            "name": "Perspektif"
         },
         {
-            "icon": "studio%202.png",
-            "id": 550919982,
-            "name": "Studio 2"
-        },
-        {
-            "icon": "studio%203.png",
-            "id": 550919983,
-            "name": "Studio 3"
-        },
-        {
-            "icon": "studio%204.png",
+            "icon": "%c3%96n.png",
             "id": 550919984,
-            "name": "Studio 4"
+            "name": "Ön"
         },
         {
-            "icon": "studio%205.png",
-            "id": 550919985,
-            "name": "Studio 5"
+            "icon": "detay.png",
+            "id": 550919983,
+            "name": "Detay"
         }
     ]
 };
