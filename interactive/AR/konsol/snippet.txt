@@ -1,0 +1,18 @@
+<model-viewer src="swood.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.45" camera-orbit="-128.3deg 75.38deg auto" min-camera-orbit="auto auto 3.369m" min-field-of-view="17.6deg" shadow-softness="0.72" auto-rotate>
+    <button class="Hotspot" slot="hotspot-1" data-position="-0.14412506518675358m 0.5222247359172314m -0.12887347839178528m" data-normal="-0.9999999999999798m -2.0141252559897774e-7m -7.275446897716532e-24m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Özel Kapaklar</div>
+    </button><button class="Hotspot" slot="hotspot-2" data-position="0.15754406367133614m 0.7810000370955099m 0.00590189435186983m" data-normal="0m 1m -1.5582382057159632e-17m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Mermer</div>
+    </button><button class="Hotspot" slot="hotspot-6" data-position="0.13222827688506575m 0.15806306254604438m -0.8984208169439758m" data-normal="0m -1m 1.558238205715963e-17m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Bronze Ayaklar</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
