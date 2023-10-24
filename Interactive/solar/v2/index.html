@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Solar Panel System Example</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Solar Panel System Example">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="Noksel Solar.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="2" environment-image="spree_bank_1k.hdr" shadow-softness="0.3" tone-mapping="commerce" auto-rotate camera-orbit="-147.2deg 89.49deg 13.2m" field-of-view="30deg">
+      <button class="Hotspot" slot="hotspot-1" data-position="0.02197900100432504m 1.0094873970034886m -2.300335199438579m" data-normal="5.551115123125783e-17m 1.3435883843274952e-7m -0.9999999999999911m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">CC-45</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="-0.0020446929450227552m 1.5340219680691956m -1.1046423277071349m" data-normal="-0.9999999999999882m 1.5300079726796238e-7m 1.8252237166116462e-8m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">U-20
+          </div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="2.750000878105569m 2.670971446299533m -1.1139190386551157m" data-normal="0.9999999999998811m -1.0394571569969347e-7m -4.7682366277612687e-7m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">CC-45
+          </div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="1.2952855325665602m 2.7270804839642375m -1.3364111490414121m" data-normal="5.207914487159737e-8m 0.9092674139287112m -0.4162124096749054m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">2x1m Solar Panels</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+  </body>
+</html>
